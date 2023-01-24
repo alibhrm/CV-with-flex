@@ -1,0 +1,120 @@
+*, ::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-items:#2c2f3f;
+}
+.d-flex{
+    display: flex !important;
+}
+.justify-center{
+    justify-content: center !important;
+}
+.align-center{
+    align-items: center !important;
+}
+.flex-column{
+    flex-direction: column !important;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+#header .profile img{
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid var(--color-items);
+}
+.rounded-circle{
+    border-radius: 50% !important;
+}
+.image-fluid{
+    width: 100%;
+    height: auto;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #040b14;
+    overflow-y: auto;
+}
+.text-light a{
+    font-family:sans-serif;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    color: white;
+}
+.icon{
+    font-size: 18px;
+    display: inline-block;
+    background: var(--color-items);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+   
+}
+.icon:hover{
+    background: #149ddd;
+}
+.nav-menu a{
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.nav-menu{
+    list-style: none;
+}
+.nav-menu span{
+    margin-left: 7px;
+}
+.nav-menu a:hover{
+    transition: all 0.8s ease;
+    font-weight: bold;
+    color: #149ddd;
+}
+.nav-menu{
+    margin-top: 20px;
+}
+#body-image{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/home-bg.jpg) top center;
+    background-size: cover;
+}
+#body-text h1{
+font-family: sans-serif;
+color: white;
+font-size: 80px;
+
+}
+#body-text p{
+font-family: sans-serif;
+    font-size: 40px;
+    color: #fff;
+}
+#body-text > p > span{
+    margin-left: 5px;
+    border-bottom:3px solid #149ddd;
+}
